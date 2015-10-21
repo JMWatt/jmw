@@ -1,17 +1,34 @@
-@font-face {
+/*@font-face {
     font-family: Raleway;
     src: url('raleway_thin-webfont.woff');
-}
+}*/
+
+/*@font-face {
+  font-family: Raleway;
+  font-weight: thin;
+  src: url('https://fonts.googleapis.com/css?family=Raleway:400');
+}*/
 
 body {
   background: #f2f2f2;
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
   font-family: Raleway;
+  font-weight: 100;
 }
 
 #body-content {
   margin-top: 85px;
+}
+
+#body-content > div > img {
+  display: block;
+  margin: auto;
+}
+
+#body-content > div {
+  text-align: center;
+  margin: auto;
 }
 
 header {
@@ -28,7 +45,17 @@ header {
   display: inline;
 }
 
-.nav-content > a {
+.nav-content > a,
+.nav-content > a:visited,
+.nav-content > a:hover,
+.nav-content > a:active  {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #4D4D4D;
+}
+
+.nav-content > a:active {
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
