@@ -1,36 +1,15 @@
-/*@font-face {
-    font-family: Raleway;
-    src: url('raleway_thin-webfont.woff');
-}*/
-
-/*@font-face {
-  font-family: Raleway;
-  font-weight: thin;
-  src: url('https://fonts.googleapis.com/css?family=Raleway:400');
-}*/
-
 body {
   background: #f2f2f2;
   margin: 0;
   padding: 10px 0;
   font-family: Raleway;
   font-weight: 100;
+  font-size: 100%;
 }
 
-#body-content {
-  margin-top: 85px;
-}
-
-#body-content > div > img {
-  display: block;
-  margin: auto;
-}
-
-#body-content > div {
-  text-align: center;
-  margin: auto;
-}
-
+/*                */
+/* Navbar Styling */
+/*                */
 header {
   background: #d2d6d8;
   height: 85px;
@@ -41,6 +20,13 @@ header {
   box-shadow: 0px 0px 7px 0px #aaaaaa;
 }
 
+#logo {
+  height: 45px;
+  width: auto;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
 .nav-content {
   display: inline;
 }
@@ -49,24 +35,18 @@ header {
 .nav-content > a:visited,
 .nav-content > a:hover,
 .nav-content > a:active  {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 21px;
+  font-weight: 100;
   text-decoration: none;
   color: #4D4D4D;
+  margin-left: 10px; 
 }
 
-.nav-content > a:active {
+/*.nav-content > a:active {
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
-}
-
-#logo {
-  height: 45px;
-  width: auto;
-  padding-top: 20px;
-  padding-left: 20px;
-}
+}*/
 
 #nav-links {
   position: absolute;
@@ -75,6 +55,53 @@ header {
   font-weight: bold;
 }
 
+/*              */
+/* Body Styling */
+/*              */
+#body-content {
+  margin-top: 85px;
+  /*padding: 10%;*/
+}
+
+#column-container {
+  padding-top: 5%;
+}
+
+#column-container > div > img {
+  position: relative;
+  width: 100%;
+  display: block;
+  margin: auto;
+  z-index: -1;
+  box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.column > h2 {
+  font-weight: 100;
+  font-size: 2.5vw;
+  margin: 0;
+  margin-bottom: -1.6%;
+  padding-left: .25%;
+}
+
+#left-column {
+  float: left;
+  width: 35%;
+  height: 100%;
+  margin-left: 13.25%;
+  margin-right: 3.5%;
+}
+
+#right-column {
+  float: left;
+  width: 35%;
+  height: 100%;
+}
+
+
+/*                     */
+/* Social Icon Styling */
+/*                     */
 #social-icons {
   margin: 0;
   padding: 0;
