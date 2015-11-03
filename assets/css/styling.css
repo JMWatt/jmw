@@ -29,6 +29,7 @@ body {
 #body-content > div {
   text-align: center;
   margin: auto;
+  display: inline-block;
 }
 
 header {
