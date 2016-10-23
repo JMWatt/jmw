@@ -32,7 +32,7 @@ body {
 }
 
 header {
-  background: #d2d6d8;
+  background: hsla(200, 7%, 84%, 0.9);
   height: 85px;
   width: 100%;
   position: fixed;
